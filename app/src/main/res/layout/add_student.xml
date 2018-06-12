@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:background="#c0ffae"
+    android:paddingRight="30dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="STUDENT DETAILS"
+        android:background="#7de971"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#a4d1a5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Phone No."
+                android:textColor="#000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:id="@+id/phoneno"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="College"
+                android:textColor="#000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:text="SUBMIT"
+        android:background="#84df78"
+        />
+
+
+</RelativeLayout>
